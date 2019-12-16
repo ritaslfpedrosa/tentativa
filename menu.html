@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin</title>
+    <title>Menu</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <!-- NAVBAR USER -->
@@ -14,7 +16,70 @@
         <a class="button third" id="menu" href="menu.html">Menu</a>
     </div>
 
-    
+    <h1>Menu</h1>
+
+    <div class="filters">
+        <p>Filter by...</p>
+        <form class="filters">
+        <div>
+            <div class="filter">
+                <p>Order by...</p><br>
+                <select name="restaurant">
+                    <option value="1st">Price high to low</option>
+                    <option value="2nd">Price low to high</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <p><b>Restaurant</b></p>
+                <label for="1st">1st Restaurant</label>
+                <input type="radio" name="restaurant" id="1st" value="1st" class="check"><br>
+                <label for="2nd">1st Restaurant</label>
+                <input type="radio" name="restaurant" id="2nd" value="2nd" class="check"><br>
+                <label for="3rd">1st Restaurant</label>
+                <input type="radio" name="restaurant" id="3rd" value="3rd" class="check"><br>
+            </div>
+
+            <div class="filter">
+                <p><b>Type of food</b></p>
+                <label for="fast_food">Fast Food</label>
+                <input type="radio" name="type" id="fast_food" value="1st" class="check"><br>
+                <label for="italian">Italian</label>
+                <input type="radio" name="type" id="italian" value="2nd" class="check"><br>
+                <label for="asian">Asian</label>
+                <input type="radio" name="type" id="asian" value="3rd" class="check"><br>
+                <label for="portuguese">Portuguese</label>
+                <input type="radio" name="type" id="portuguese" value="3rd" class="check"><br>
+                <label for="vegetarian">Vegetarian</label>
+                <input type="radio" name="type" id="vegetarian" value="3rd" class="check"><br>
+                <label for="indian">Italian</label>
+                <input type="radio" name="type" id="indian" value="3rd" class="check">
+                <label for="pizza">Pizza</label>
+                <input type="radio" name="type" id="pizza" value="3rd" class="check">
+            </div>
+        </div>
+            <button class="button first">Submit</button>
+
+        </form>
+    </div>
+
+    <div class="menu">
+        <div class="item">
+            <div>
+                <h2>Name</h2>
+                <p>Restaurant</p>
+                <p class="price">Price</p>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Name</h2>
+                <p>Restaurant</p>
+                <p class="price">Price</p>
+            </div>
+        </div>
+
+    </div>
 
     <!-- FOOTER-->
     <div class="footer">
