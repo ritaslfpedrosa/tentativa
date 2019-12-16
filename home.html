@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LDMEATS</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR USER -->
+    <div class="nav user">
+        <a class="button third" id="home" style="float:left;" href="home.html"><img src="assets/img/logos/LDM EATS.png" alt="logo"/></a>
+        <a class="button third" id ="cart" href="cart.html"><img src="assets/icons/cart.png" alt="shopping cart"></a>
+        <a class="button first" >Log Out</a>
+        <a class="button third" id="profile">Name</a>
+        <a class="button third" id="menu" href="menu.html">Menu</a>
+    </div>
+
+    <!-- SLOGAN -->
+    <div id="slogan">
+        <div>
+            <img src="assets/img/logos/LDMEATS.png" alt="logo">
+            <p>Food for every taste without having to leave the comfort of your home.</p>
+            <a class="button first" href="menu.html">See the menu</a>
+        </div>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div id="slideshow">
+        <div>
+            <img src="assets/img/background/log%20in.png" alt="slide-one">
+        </div>
+        <div>
+            <img src="assets/img/background/register.png" alt="slide-two">
+        </div>
+        <div>
+            <img src="assets/img/background/log%20in.png" alt="slide-three">
+        </div>
+        <div>
+            <img src="assets/img/background/register.png" alt="slide-four">
+        </div>
+    </div>
+
+    <!-- FAVOURITES -->
+    <div id="favourites">
+        <div>
+            <h2>Our favourites</h2>
+            <div class="favourites">
+                <p>Sushi</p>
+                <img src="assets/img/background/log in.png" alt="sushi"/>
+            </div>
+            <div class="favourites">
+                <p>Pizza</p>
+                <img src="assets/img/background/log in.png" alt="pizza"/>
+            </div>
+            <div class="favourites">
+                <p>Fast Food</p>
+                <img src="assets/img/background/log in.png" alt="fast food"/>
+            </div>
+            <div class="favourites">
+                <p>Portuguese</p>
+                <img src="assets/img/background/log in.png" alt="portuguese"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER-->
+    <div class="footer">
+    <img src="assets/img/logos/LDM%20EATS.png" alt="logo">
+    <div class="support">
+        <div class="contact">
+            <img src="assets/icons/local.jpg" alt="location"/>
+            <p>Rua Larga</p>
+            <p>nº 12, 3000-607</p>
+            <p><span>Coimbra</span></p>
+        </div>
+        <div class="contact">
+            <img src="assets/icons/phone.png" alt="phone"/>
+            <p>+351 <span>239 454 377</span></p>
+            <p>+351 <span>239 984 025</span></p>
+        </div>
+        <div class="contact">
+            <img src="assets/icons/mail.png" alt="mail"/>
+            <p>ldmeats@mail.com</p>
+        </div>
+        <div class="contact" id="social_media">
+            <a><img src="assets/icons/insta.png" alt="instagram"/></a>
+            <a><img src="assets/icons/facebook.png" alt="facebook"/></a>
+        </div>
+        </div>
+    </div>
+
+
+<script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
+</script>
+
+</body>
+</html>
